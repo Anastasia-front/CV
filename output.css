@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -694,9 +694,11 @@ a:hover {
   }
 }
 
-.list-disc > li {
-  list-style-type: disc;
-  margin-left: 20px;
+.list-marked > li {
+  /* list-style-type: disc;
+    margin-left: 20px; */
+  margin-left: 1.25rem;
+  list-style-type: disc
 }
 
 .list-aside > li {
@@ -709,8 +711,4 @@ a:hover {
 
 .link-bold {
   font-weight: 600;
-}
-
-.list-disc {
-  list-style-type: disc;
 }

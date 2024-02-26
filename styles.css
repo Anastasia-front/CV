@@ -73,16 +73,15 @@
     @apply md:hidden;
   }
 
-  .list-disc > li {
-    list-style-type: disc;
-    margin-left: 20px;
+  .list-marked > li {
+    @apply list-disc ml-5;
   }
 
   .list-aside > li {
     @apply leading-7;
   }
 
-  .list-pb > li {
+  .list-paddingBottom > li {
     @apply pb-[5px];
   }
 
