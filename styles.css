@@ -46,7 +46,11 @@
   }
 
   h4 {
-    @apply capitalize font-semibold;
+    @apply capitalize font-semibold pb-1;
+  }
+
+  h4 + ul li {
+    @apply leading-[1.55rem];
   }
 
   p,
@@ -81,11 +85,11 @@
     @apply leading-7;
   }
 
-  .list-paddingBottom > li {
-    @apply pb-[5px];
-  }
-
   .link-bold {
     @apply font-semibold;
+  }
+
+  .padding-bottom {
+    @apply pb-3;
   }
 }
