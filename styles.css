@@ -2,3 +2,91 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    @apply flex flex-col-reverse md:flex-row font-sans text-font16 md:text-font20 xl:text-font24 
+    font-normal text-black bg-white max-w-[888px] mx-auto my-0 border border-solid border-black;
+  }
+
+  aside,
+  main {
+    @apply flex flex-col;
+  }
+
+  aside {
+    @apply p-8 md:p-4 flex-1 gap-14 md:max-w-[250px];
+    background: rgb(255, 165, 177);
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 235, 213, 0.769) 0%,
+      #ffbfc9b1 50%,
+      rgba(255, 212, 167, 0.7693671218487395) 100%
+    );
+  }
+
+  main {
+    @apply p-8 flex-auto gap-6;
+  }
+
+  section {
+    @apply w-full flex flex-col gap-3 items-start;
+  }
+
+  h1 {
+    @apply uppercase text-font36Long font-bold font-serif;
+  }
+
+  h2 {
+    @apply uppercase italic text-font28Long;
+  }
+
+  h3 {
+    @apply uppercase text-font18Long;
+  }
+
+  h4 {
+    @apply capitalize font-semibold;
+  }
+
+  p,
+  span,
+  li {
+    @apply text-font16Long font-thin leading-6;
+  }
+
+  a {
+    @apply underline underline-offset-4 cursor-pointer decoration-1 hover:decoration-dotted leading-10;
+  }
+
+  img {
+    @apply md:pb-3;
+  }
+}
+
+@layer components {
+  .mobile-none {
+    @apply hidden md:block self-center;
+  }
+
+  .tablet-none {
+    @apply md:hidden;
+  }
+
+  .list-disc > li {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  .list-aside > li {
+    @apply leading-7;
+  }
+
+  .list-pb > li {
+    @apply pb-[5px];
+  }
+
+  .link-bold {
+    @apply font-semibold;
+  }
+}
