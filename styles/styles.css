@@ -89,6 +89,10 @@
     @apply font-semibold;
   }
 
+  .link-text{
+    @apply no-underline leading-6 font-normal hover:text-slate-700;
+  }
+
   .padding-bottom {
     @apply pb-3;
   }
